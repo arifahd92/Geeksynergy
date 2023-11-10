@@ -20,7 +20,7 @@ export default function Dashboard() {
       setList(data);
       setRequest(false);
     } catch (error) {
-      console.log(error.message);
+      console.log(error);
       alert(error.message);
       setRequest(false);
     }
