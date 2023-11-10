@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Protect from "./components/Protect";
 import Info from "./components/Info";
+import ErrorPage from "./components/ErrorPage";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Protect Component={Dashboard} />} />
         <Route path="/info" element={<Protect Component={Info} />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </>
   );
