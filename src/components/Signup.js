@@ -30,6 +30,7 @@ function Signup() {
     const user = JSON.parse(localStorage.getItem("user")) || [];
     user.push(formData);
     localStorage.setItem("user", JSON.stringify(user));
+    alert("success");
     setFormData({
       name: "",
       password: "",
@@ -37,6 +38,7 @@ function Signup() {
       phone: "",
       profession: "",
     });
+    navigate("/");
   };
   return (
     <div className="mainContainer">

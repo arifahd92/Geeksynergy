@@ -10,7 +10,7 @@ export default function Login() {
   const navigate = useNavigate();
   useEffect(() => {
     const login = JSON.parse(localStorage.getItem("login") || false);
-    if (!login) {
+    if (login) {
       navigate("/dashboard");
     }
   });
